@@ -1,0 +1,151 @@
+/*슬라이드메뉴*/
+.menu{position:absolute; top:0; left:-75%; width:75%; height:100%; background:#252525; transition:0.2s; z-index:200; padding:23px;}
+.menu .close_menu{display:inline-block; background:url(../image/layout/btn_close.png) no-repeat center; width:8px; height:7px; position:absolute; top:10px; right:10px; z-index:100;}
+.lnb{margin-top:50px;}
+.depth_01{display:block;}
+.depth_02{display:none;}
+.depth_03{display:none;}
+.depth_01 > li > a{display:block; width:100%; background:#252525; height:23px; line-height:23px; padding-left:8px; color:#fff; font-size:12px; font-weight:bold; transition:0.2s; border-bottom:1px solid #ffffff;}
+.depth_01 > li > a span{ position:absolute; right:25px; font-size:12px; }
+.depth_02 > li > a{display:block; width:100%; background:#252525;  height:23px; line-height:23px; padding-left:8px; color:#ffffff; font-size:8px; transition:0.2s; border-bottom:1px solid #ffffff;}
+.depth_02 > li > a::before{content:' - '; padding-right:2px; }
+.depth_03 > li > a{display:block; width:100%; background:#252525;  height:23px; line-height:23px; padding-left:8px; color:#ffffff; font-size:8px; transition:0.2s; border-bottom:1px solid #ffffff;}
+.dp_block{display:block!important;}
+.dimmed{display:none; position:absolute; width:100%; height:100%; top:0; left:0;opacity: 0.5; background-color: rgba(0, 0, 0,8); z-index:100;} 
+.menu_btn_box{margin-top:20px; text-align:center;}
+.menu_btn_box .m_login{display:inline-block; background:url(../image/layout/btn_m_login.png) no-repeat center;  width:103px; height:23px; background-size:103px 23px;}
+.menu_btn_box .m_sign{display:inline-block; background:url(../image/layout/btn_m_sign.png) no-repeat center;  width:103px; height:23px; background-size:103px 23px;}
+
+/*푸터*/
+.footer{margin-top:39px; background:#ebebeb; }
+.footer .f_btn_box{position:relative; width:100%; height:23px; background:#252525; line-height:20px;}
+.footer .f_btn_box > div{float:left; width:50%; text-align:center;}
+.footer .f_btn_box .goway{display:inline-block; text-align:center; font-size:12px; font-weight:bold; color:#ffffff;}
+.footer .f_btn_box .bar{ position:absolute; top:0px; left:50%; display:inline-block; background:url(../image/layout/bar.png) no-repeat center; width:1px; height:18px; background-size:1px 18px; line-height:22px; margin-top:2px;}
+.footer .f_btn_box .phone_reserve{display:inline-block;  text-align:center;font-size:12px; font-weight:bold; color:#ffffff;}
+.footer .address{padding:20px; text-align:center; color:#252525;}
+.footer .address h4{font-size:11px; line-height:17px; font-weight:bold;}
+.footer .address p{font-size:11px; line-height:17px;}
+.footer .address a{font-size:11px; text-decoration:underline;  color:#252525;}
+.footer .sns{text-align:center; padding-bottom:21px;}
+.footer .sns a{display:inline-block; width:28px; height:28.5px;}
+.footer .sns .fb{background:url(../image/sub/fb.png) no-repeat center; background-size:28px 28.5px;}
+.footer .sns .insta{background:url(../image/sub/insta.png) no-repeat center; background-size:28px 28.5px;}
+.footer .sns .yt{background:url(../image/sub/yt.png) no-repeat center; background-size:28px 28.5px;}
+
+/* 페이징 */
+.paging_box{text-align:center; margin-top:11.5px;}
+.paging_box .btn_page{display:inline-block; border:1px solid #ababab; color:#616161; font-size:12px; width:18.5px; height:18.5px; text-align:center; line-height:17px; vertical-align:top; }
+.paging_box .btn_page.prev_prev{display:inline-block; background:url(../image/sub/btn_prev_prev.png) no-repeat center; width:18.5px; height:18.5px; background-size:18.5px 18.5px;}
+.paging_box .btn_page.prev{display:inline-block; background:url(../image/sub/btn_prev.png) no-repeat center; width:18.5px; height:18.5px; background-size:18.5px 18.5px;}
+.paging_box .btn_page.next{display:inline-block; background:url(../image/sub/btn_next.png) no-repeat center; width:18.5px; height:18.5px; background-size:18.5px 18.5px;}
+.paging_box .btn_page.next_next{display:inline-block; background:url(../image/sub/btn_next_next.png) no-repeat center; width:18.5px; height:18.5px; background-size:18.5px 18.5px;}
+
+/* 버튼 */
+.btn_box{text-align:center; margin-top:13px;}
+.btn_box a{display:inline-block; width:45.5px; height:24.5px; line-height:25px; font-size:15px; font-weight:bold;}
+.btn_box .btn_type_1{background:#252525; color:#ffffff;}
+
+@media screen and (min-width:640px){
+/*슬라이드메뉴*/
+.menu{ padding:46px;}
+.menu .close_menu{width:16px; height:14px; top:20px; right:20px; }
+.lnb{margin-top:74px;}
+.depth_01 > li > a{height:46px; line-height:46px; padding-left:16px;font-size:24px; }
+.depth_01 > li > a span{right:50px; font-size:24px;}
+.depth_02 > li > a{height:46px; line-height:46px; padding-left:16px; font-size:16px; }
+.depth_02 > li > a::before{padding-right:4px; }
+.depth_03 > li > a{height:46px; line-height:46px; padding-left:16px; font-size:16px;}
+.menu_btn_box{margin-top:40px;}
+.menu_btn_box .m_login{width:206px; height:46px; background-size:206px 46px;}
+.menu_btn_box .m_sign{width:206px; height:46px; background-size:206px 46px;}
+
+/*푸터*/
+.footer{margin-top:79px; }
+.footer .f_btn_box{height:46px;line-height:46px;}
+.footer .f_btn_box .goway{font-size:24px;}
+.footer .f_btn_box .bar{width:2px; height:36px; background-size:2px 36px; line-height:44px; margin-top:4px;}
+.footer .f_btn_box .phone_reserve{font-size:24px;}
+.footer .address{padding:40px;}
+.footer .address h4{font-size:22px; line-height:34px; font-weight:bold;}
+.footer .address p{font-size:22px; line-height:34px;}
+.footer .address a{font-size:22px;}
+.footer .sns{padding-bottom:43px;}
+.footer .sns a{display:inline-block; width:56px; height:57px;}
+.footer .sns .fb{background:url(../image/sub/fb.png) no-repeat center; background-size:56px 57px;}
+.footer .sns .insta{background:url(../image/sub/insta.png) no-repeat center; background-size:56px 57px;}
+.footer .sns .yt{background:url(../image/sub/yt.png) no-repeat center; background-size:56px 57px;}
+
+/* 페이징 */
+.paging_box{margin-top:23px;}
+.paging_box .btn_page{font-size:14px; width:37px; height:37px; text-align:center; line-height:37px; }
+.paging_box .btn_page.prev_prev{display:inline-block; background:url(../image/sub/btn_prev_prev.png) no-repeat center; width:37px; height:37px; background-size:37px 37px;}
+.paging_box .btn_page.prev{display:inline-block; background:url(../image/sub/btn_prev.png) no-repeat center; width:37px; height:37px; background-size:37px 37px;}
+.paging_box .btn_page.next{display:inline-block; background:url(../image/sub/btn_next.png) no-repeat center; width:37px; height:37px; background-size:37px 37px;}
+.paging_box .btn_page.next_next{display:inline-block; background:url(../image/sub/btn_next_next.png) no-repeat center; width:37px; height:37px; background-size:37px 37px;}
+
+/* 버튼 */
+.btn_box{text-align:center; margin-top:26px;}
+.btn_box a{display:inline-block; width:90px; height:49px; line-height:50px;  font-size:30px;}
+
+}
+
+
+
+
+
+
+/* margin */
+.mt0{margin-top:0!important;}
+.mt5{margin-top:5px!important;}
+.mt7{margin-top:7px!important;}
+.mt20p{margin-top:20%!important;}
+.mt32{margin-top:32px;}
+.mt45{margin-top:45px;}
+.ml0{margin-left:0!important;}
+.ml8{margin-left:8px;}
+.mr18{margin-right:18px;}
+.mb5{margin-bottom:5!important;}
+
+/* padding */
+.pd0{padding:0;}
+.pdt5{padding-top:5px;}
+.pdb5{padding-bottom:5px;}
+.pdtb16{padding:16px 0!important;}
+.pdlr20{padding:0 20px;}
+
+/* percentage */
+.cper2500{width:25%!important;}
+.cper2800{width:28%!important;}
+.cper3000{width:30%!important;}
+.cper3333{width:33.3%!important;}
+.cper3500{width:35%!important;}
+.cper5000{width:50%!important;}
+.cper6500{width:65%!important;}
+.cper7000{width:70%!important;}
+.cper7500{width:75%!important;}
+.cper10000{width:100%!important;}
+.cperauto{width:auto;}
+
+/* text-align */
+.talign_c{text-align:center;}
+.talign_l{text-align:left;}
+.talign_r{text-align:right;}
+
+/* border */
+.bdln{border-left:none!important;}
+.bdbn{border-bottom:none!important;}
+.bdbg{border-bottom:2px solid #e1e1e1;}
+
+/* color */
+.color_r{color:#e64949;}
+
+/* height */
+.h39{height:39px;}
+
+/* font */
+.bold{font-weight:bold;}
+
+/*float*/
+.fr{float:right;}
+.fl{float:left;}

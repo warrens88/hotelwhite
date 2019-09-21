@@ -1,0 +1,180 @@
+﻿@charset "utf-8";
+
+html,body{width:100%;height:100%;}
+.wrap{position:relative;width:100%;height:100%;}
+.wrap.main{background:#ffffff;}
+.scroll{position:relative;width:100%;height:100%;overflow-y:auto;-webkit-overflow-scrolling: touch; }
+
+/* 헤더 */
+.header{position:absolute; width:100%; top:25px; text-align:center; z-index:100;}
+.header .btn_menu{display:inline-block; position:absolute; top:0; left:13px; background:url(../image/layout/btn_menu.png) no-repeat center; width:17px; height:15px; background-size:17px 15px;}
+.header .logo{display:inline-block; width:189px; height:28px; background:url(../image/layout/logo.png) no-repeat center; background-size:189px 28px;}
+.header .btn_reserve{display:inline-block; position:absolute; top:0; right:13px; background:url(../image/layout/btn_reserve.png) no-repeat center; width:30px; height:15px; background-size:30px 15px;}
+
+/* 메인슬라이드 */
+.img_box{position:relative; text-align:center;}
+.img_box img{display:block; width:100%; z-index:-1;}
+/* 슬라이드_02 */
+/* .swiper-container.roll_02 .swiper-wrapper .btn_detail{position:absolute; display:inline-block; background:url(../image/layout/btn_detail.png) no-repeat center; width:92.5px; height:20px; background-size:92.5px 20px; z-index:100; top:86px; left:50%; transform: translateX(-50%);} */
+.swiper-container.roll_02 .swiper-wrapper .btn_detail{position:absolute; left:50%; top:80%; width:115px; height:25px; background:url(../image/layout/btn_detail.png) no-repeat; background-size:cover; transform:translate(-50%, -50%);}
+
+/*메인슬라이드 위 버튼*/
+.direct_box{position:absolute;width:100%; z-index:100; padding:0 13px; top:75%;}
+.direct_box a{float:left; width:50%;}
+.direct_box .btn_hotel_reserve{padding-right:2px;}
+.direct_box .btn_special_offers{padding-left:2px;}
+.direct_box a img{display:inline-block; width:100%; float:left; z-index:300;}
+
+/* 타이틀_01 (진행중인프로모션)*/
+.title{position:relative; width:100%; height:20px; margin-top:20px;  border-bottom:3px solid #ebebeb; box-sizing:content-box;}
+.title .title_01{position:absolute; top:0; left:24px; background:url(../image/layout/title_01.png) no-repeat center; width:110px; height:15px; background-size:110px 15px; }
+.title .btn_more{position:absolute; display:inline-block; top:5px; right:24px; background:url(../image/layout/btn_more.png) no-repeat center; width:39px; height:9px; background-size:39px 9px;}
+
+/*슬라이드_03*/
+.img_box_03{position:relative; padding:19px 24px 17px 24px; text-align:center;}
+.img_box_03 img{width:100%; z-index:-1}
+.img_box_03 .txt_recommand{position:absolute; display:inline-block; background:url(../image/layout/txt_recommand.png) no-repeat center; width:69px; height:22px; background-size:69px 22px; z-index:100; top:19px; left:24px;}
+.img_box_03 h3{font-size:14px; color:#000000; font-weight:bold; margin-top:12px;}
+.img_box_03 h4{font-size:12px;margin-top:5px;}
+.img_box_03 p{font-size:10px; color:#000000; font-weight:bold; margin-top:10px;}
+.img_box_03 .grade{margin-top:10px; text-align:center;}
+.img_box_03 .grade .level{display:inline-block; background:url(../image/layout/best.png) no-repeat center; width:69px; height:18px; background-size:69px 18px;}
+.img_box_03 .grade .price{display:inline-block; font-size:12px; width:69px; height:18px; background:#4d7b47; color:#ffffff; vertical-align:top; line-height:17px; }
+.img_box_03 .grade .free{display:inline-block; background:url(../image/layout/free.png) no-repeat center; width:69px; height:18px; background-size:69px 18px;}
+
+/*이벤트*/
+.event{ width:100%; padding:0px 25px}
+/* .event .event_box{ overflow:hidden; padding:10px; border:1px solid #b7b7b7; border:2px solid red;} */
+.event .event_box{display:flex; justify-content:normal; padding:10px; border:1px solid #b7b7b7;}
+.event .event_box div{float:left;}
+.event .event_box .img{ width:50%; }
+.event .event_box .img img{width:100%;}
+/* .event .event_box .text{width:50%; padding-left:22px;} */
+.event .event_box .text{padding-left:24px;}
+.event .event_box .text h3{font-size:13px; font-weight:bold; line-height:26px; letter-spacing:-2px;}
+.event .event_box .text p{font-size:9px; line-height:18px;  letter-spacing:-1px;}
+
+/* 20190917추가 */
+/* 타이틀_02 (화이트프로그램) */ 
+.title .title_wp{position:absolute; top:0; left:24px; background:url(../image/layout/title_wp.png) no-repeat center; width:97px; height:15px; background-size:97px 15px; }
+
+
+/* 타이틀_03 (더화이트호텔멤버쉽) */
+.title .title_02{position:absolute; top:0; left:24px; background:url(../image/layout/title_02.png) no-repeat center; width:122px; height:15px; background-size:122px 15px; }
+.member{position:relative; overflow:hidden; height:29px;}
+.member .wise{position:absolute; top:0; left:24px; display:inline-block; background:url(../image/layout/title_02_01.png) no-repeat center; width:134px; height:29px; background-size:134px 29px; }
+.member .sign{position:absolute; top:0; right:24px; display:inline-block; background:url(../image/layout/btn_sign.png) no-repeat center; width:121.5px; height:28px; background-size:121.5px 28px;}
+
+/* 타이틀_03 (갤러리) */
+.title .title_03{position:absolute; top:0; left:24px; background:url(../image/layout/title_03.png) no-repeat center; width:38.5px; height:15px; background-size:38.5px 15px; }
+/* 갤러리 */
+.gallary{padding:21.5px;}
+.gallary .g_box{overflow:hidden;}
+.gallary .g_box:last-child{margin-top:1.5px;}
+.gallary .g_box a{position:relative; display:inline-block; float:left; width:50%;}
+.gallary .g_box a:first-child{padding-right:1.5px;}
+.gallary .g_box a:last-child{padding-left:1.5px;}
+.gallary .g_box a span:first-child img{width:100%; height:auto; }
+.gallary .g_box a span:last-child{position:absolute; bottom:10px; left:50%; transform: translateX(-50%);}
+.gallary .g_box a .txt_room{background:url(../image/layout/txt_room.png) no-repeat center; width:19px; height:11px; background-size:19px 11px;}
+.gallary .g_box a .txt_etc{background:url(../image/layout/txt_etc.png) no-repeat center; width:39px; height:11px; background-size:39px 11px;}
+.gallary .g_box a .txt_pro{background:url(../image/layout/txt_pro.png) no-repeat center; width:39px; height:11px; background-size:39px 11px;}
+.gallary .g_box a .txt_media{background:url(../image/layout/txt_media.png) no-repeat center; width:19px; height:11px; background-size:19px 11px;}
+/* 갤러리 레이어팝업 */
+.pop-layer .btn-layerClose{background:url(../image/layout/layer_close.png) no-repeat center; width:10px; height:10px; background-size:10px 10px; position: absolute; top: 5px; right: 5px;}
+.pop-layer { display: none; position: absolute; top: 50%; left: 50%; width: 100%;}
+.dim-layer { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 100;}
+.dim-layer .dimBg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0.5; filter: alpha(opacity=50);}
+.dim-layer .pop-layer {  display: block; }
+.pop-conts img{width:100%;}
+
+/*로그인*/
+.login{ padding:0 23px; text-align:center; width:100%; margin-top:35px;}
+.login .dosign{display:inline-block; background:url(../image/layout/txt_dosign.png) no-repeat center; width:198px; height:34px; background-size:198px 34px;}
+.login .btn_box{ margin-top:8px;}
+.login .btn_box .btn_login{display:inline-block; background:url(../image/layout/btn_login.png) no-repeat center; width:103px; height:22.5px; background-size:103px 22.5px;}
+.login .btn_box .btn_sign{display:inline-block; background:url(../image/layout/btn_sign_02.png) no-repeat center; width:103px; height:22.5px; background-size:103px 22.5px;}
+
+
+@media screen and (min-width:640px){
+/* 헤더 */
+.header .btn_menu{top:0;left:26px; width:35px; height:30px; background-size:35px 30px;}
+.header .logo{width:378px; height:56px; background-size:378px 56px;}
+.header .btn_reserve{top:0; right:26px; width:59px; height:30px; background-size:59px 30px;}
+
+/* 슬라이드_02 */
+.swiper-container.roll_02 .swiper-wrapper .btn_detail{position:absolute; left:50%; top:80%; width:189px; height:40px; background:url(../image/layout/btn_detail.png) no-repeat; background-size:cover; transform:translate(-50%, -50%);}
+
+/* 타이틀_01 */
+.title{height:40px; margin-top:40px;  border-bottom:3px solid #ebebeb; box-sizing:content-box;}
+.title .title_01{position:absolute; top:0; left:24px;width:220px; height:30px; background-size:220px 30px; }
+.title .btn_more{top:10px; right:24px; background:url(../image/layout/btn_more.png) no-repeat center; width:78px; height:18px; background-size:78px 18px;}
+
+/*슬라이드_03*/
+.img_box_03{padding:38px 48px 25px 48px;}
+.img_box_03 .txt_recommand{ width:138px; height:44px; background-size:138px 44px; z-index:100; top:38px; left:48px;}
+.img_box_03 h3{font-size:26px; margin-top:22px;}
+.img_box_03 h3 span{font-size:18px;}
+.img_box_03 p{font-size:20px; margin-top:20px;}
+.img_box_03 .grade{margin-top:20px;}
+.img_box_03 .grade .level{width:138px; height:36px; background-size:138px 36px;}
+.img_box_03 .grade .price{font-size:24px; width:138px; height:36px;line-height:34px; }
+
+
+/*이벤트*/
+.event{ padding:70px 50px 0px 50px;}
+.event .event_box{padding:20px;}
+.event .event_box .text{padding-left:35px;}
+.event .event_box .text h3{font-size:26px; font-weight:bold; line-height:52px; letter-spacing:-2px;}
+.event .event_box .text p{font-size:18px; line-height:26px;  letter-spacing:-2px;}
+
+/* 타이틀_02 (더화이트호텔멤버쉽) */
+.title .title_02{left:48px;  width:244px; height:30px; background-size:244px 30px; }
+.member{height:58px; margin-top:24px;}
+.member .wise{left:48px;  width:268px; height:58px; background-size:268px 58px; }
+.member .sign{right:48px; width:243px; height:56px; background-size:243px 56px;}
+
+/* 20190917추가 */
+/* 타이틀_02 (화이트프로그램) */ 
+.title .title_wp{position:absolute; top:0; left:48px; background:url(../image/layout/title_wp.png) no-repeat center; width:194px; height:30px; background-size:194px 30px; }
+.img_box_03 .grade .free{width:138px; height:36px; background-size:138px 36px;}
+
+/* 타이틀_03 (갤러리) */
+.title .title_03{ top:0; left:48px; width:77px; height:30px; background-size:77px 30px; }
+.gallary{padding:43px;}
+.gallary .g_box:last-child{margin-top:3px;}
+.gallary .g_box a:first-child{padding-right:3px;}
+.gallary .g_box a:last-child{padding-left:3px;}
+.gallary .g_box a span:last-child{bottom:20px; left:50%; transform: translateX(-50%);}
+.gallary .g_box a .txt_room{width:38px; height:22px; background-size:38px 22px;}
+.gallary .g_box a .txt_etc{width:78px; height:22px; background-size:78px 22px;}
+.gallary .g_box a .txt_pro{ width:78px; height:22px; background-size:78px 22px;}
+.gallary .g_box a .txt_media{ width:38px; height:22px; background-size:38px 22px;}
+/* 갤러리 레이어팝업 */
+.pop-layer .btn-layerClose{ width:20px; height:20px; background-size:20px 20px; top:10px; right:10px;}
+
+/*로그인*/
+.login{ padding:0 46px; text-align:center; width:100%; margin-top:80px;}
+.login .dosign{ width:396px; height:68px; background-size:396px 68px;}
+.login .btn_box{ margin-top:16px;}
+.login .btn_box .btn_login{ width:206px; height:45px; background-size:206px 45px;}
+.login .btn_box .btn_sign{ width:206px; height:45px; background-size:206px 45px;}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.pt60{padding-top:60px;}
+
+.mt5{margin-top:5px;}
+.mt61{margin-top:61px;}
+
+

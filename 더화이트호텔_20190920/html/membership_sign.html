@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="../css/reset.css">
+
+  <link rel="stylesheet" href="../css/sub.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/swiper.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="../js/swiper.js"></script>
+  <!-- 기타 js -->
+  <script src="../js/script.js"></script>
+  <!-- Demo styles -->
+</head>
+
+
+<body>
+  <div class="wrap">
+    <div class="scroll">
+      <!-- 헤더 -->
+      <div class="sub_header">
+        <a href="#!" class="btn_menu"></a>
+        <a href="#!" class="logo"></a>
+        <a href="#!" class="btn_reserve"></a>
+      </div>
+
+      <!-- 슬라이드메뉴 -->
+      <div class="menu">
+        <a href="#!" class="close_menu"></a>
+        <div class="lnb">
+          <ul class="depth_01">
+            <li>
+              <a href="#!">ABOUT<span>+</span></a>
+              <ul class="depth_02">
+                <li>
+                  <a href="#!">depth_02</a>
+                  <ul class="depth_03">
+                    <li>
+                      <a href="#!">depth_03</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="depth_01">
+            <li>
+              <a href="#!">ROOMS<span>+</span></a>
+              <ul class="depth_02">
+                <li>
+                  <a href="#!">객실종합안내</a>
+                  <a href="#!">호텔</a>
+                  <a href="#!">테라스</a>
+                  <a href="#!">빌라</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="depth_01">
+            <li>
+              <a href="#!">DINING<span>+</span></a>
+              <!-- <ul class="depth_02">
+                          <li>
+                              <a href="#!">depth_02</a>
+                              <ul class="depth_03">
+                                  <li>
+                                      <a href="#!">depth_03</a>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul> -->
+            </li>
+          </ul>
+          <ul class="depth_01">
+            <li>
+              <a href="#!">MEETING&BANQUET<span>+</span></a>
+            </li>
+          </ul>
+          <ul class="depth_01">
+            <li>
+              <a href="#!">FACILITLES<span>+</span></a>
+            </li>
+          </ul>
+          <ul class="depth_01">
+            <li>
+              <a href="#!">SPECIAL OFFERS<span>+</span></a>
+            </li>
+          </ul>
+          <ul class="depth_01">
+            <li>
+              <a href="#!">MEMBERSHIP<span>+</span></a>
+            </li>
+          </ul>
+          <ul class="depth_01">
+            <li>
+              <a href="#!">CUSTOMER CENTER<span>+</span></a>
+            </li>
+          </ul>
+          <ul class="depth_01">
+            <li>
+              <a href="#!">CAREER<span>+</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu_btn_box">
+          <a href="#!" class="m_login"></a>
+          <a href="#!" class="m_sign"></a>
+        </div>
+      </div>
+      <div class="dimmed"></div>
+
+      <div class="sub_conts pd0">
+        <!-- 상단이미지 -->
+        <div class="sign_main">
+          <img src="../image/sub/sign_page.png">
+        </div>
+        <p class="sign_main_txt">
+            본 신청서에 기재된 내용은 예약, 이용, 회원통신 등의 전산자료로<br/>
+            관리되오니, 빠짐없이 정확하게 기재하여 주시기 바랍니다
+        </p>
+
+        <!-- 테이블 -->
+        <div class="sign_table">
+          <!-- 가입상품명 -->
+          <div class="s_title mt45">
+            <div class="fl">
+              <h2>가입상품명</h2>
+            </div>
+          </div>
+          <div class="s_check">
+            <input type="radio" id="a1" name="aa">
+            <label for="a1">와이즈 멤버십패밀리</label>
+            <input type="radio" id="a2" class="ml8" name="aa">
+            <label for="a2">와이즈 멤버십실속형</label>
+          </div>
+          <!-- 신청인 인적사항 -->
+          <div class="s_title mt45">
+            <div class="fl">
+              <h2>신청인 인적사항</h2>
+            </div>
+          </div>
+          <div class="s_table_box">
+            <table class="table_type_1">
+              <colgroup>
+                <col class="cper2800">
+                <col class="cperauto">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th rowspan="2">성명/법인명<br/><span>(필수)</span></th>
+                  <td>
+                    <input type="text" placeholder="한글" class="cper5000">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" placeholder="영문" class="cper5000">
+                  </td>
+                </tr>
+                <tr>
+                  <th>생년월일<span>(필수)</span></th>
+                  <td>
+                    <select>
+                      <option>2019</option>
+                    </select>
+                    <select>
+                      <option>01</option>
+                    </select>
+                    <select>
+                      <option>01</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>성별</span></th>
+                  <td>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">남자</label>
+                    <input type="radio" id="female" name="gender" class="ml8">
+                    <label for="female">여자</label>
+                  </td>
+                </tr>
+                <tr>
+                  <th rowspan="2">연락처<span>(필수)</span></th>
+                  <td>
+                    <p class="pdb5">휴대전화</p>
+                    <div class="phone_box">
+                      <select>
+                        <option>010</option>
+                      </select>
+                      <span class="span-hyphen">-</span>
+                      <input type="text">
+                      <span class="span-hyphen">-</span>
+                      <input type="text">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="pdb5">유선전화<span class="color_r">(선택)</span></p>
+                    <div class="phone_box mt5">
+                      <select>
+                        <option>010</option>
+                      </select>
+                      <span class="span-hyphen">-</span>
+                      <input type="text">
+                      <span class="span-hyphen">-</span>
+                      <input type="text">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>이메일<span>(필수)</span></th>
+                  <td>
+                    <div class="mail_box mt5">
+                      <input type="text">
+                      <span class="span_at">@</span>
+                      <select>
+                        <option></option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>주소<span>(필수)</span></th>
+                  <td>
+                    <div class="address_box">
+                      <input type="text" class="cper5000">
+                      <button>주소검색</button>
+                      <input type="text" class="cper10000">
+                      <input type="text" class="cper10000">
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 기명회원 기재란 -->
+          <div class="s_title mt45">
+            <div class="fl">
+              <h2>기명회원 기재란</h2>
+            </div>
+          </div>
+          <div class="s_table_box">
+            <table class="table_type_1">
+              <colgroup>
+                <col class="cper2800">
+                <col class="cperauto">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>성명</th>
+                  <td>
+                    <input type="text" class="cper5000">
+                  </td>
+                </tr>
+                <tr>
+                  <th>생년월일</th>
+                  <td>
+                    <select>
+                      <option>2019</option>
+                    </select>
+                    <select>
+                      <option>01</option>
+                    </select>
+                    <select>
+                      <option>01</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>이메일</th>
+                  <td>
+                    <div class="mail_box">
+                      <input type="text">
+                      <span class="span_at">@</span>
+                      <select>
+                        <option></option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>연락처</th>
+                  <td>
+                    <div class="phone_box">
+                      <select>
+                        <option>010</option>
+                      </select>
+                      <span class="span-hyphen">-</span>
+                      <input type="text">
+                      <span class="span-hyphen">-</span>
+                      <input type="text">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th rowspan="2">휴대전화</th>
+                  <td>
+                    <div class="phone_box">
+                      <select>
+                        <option>010</option>
+                      </select>
+                      <span class="span-hyphen">-</span>
+                      <input type="text">
+                      <span class="span-hyphen">-</span>
+                      <input type="text">
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <span class="sign_warn">
+            <img class="s_01" src="../image/sub/sign_warn.png">
+          </span>
+
+          <!-- 기념일등록 -->
+          <div class="s_title mt45">
+            <div class="fl">
+              <h2>기념일 등록</h2>
+            </div>
+          </div>
+          <div class="s_table_box">
+              <table class="table_type_1">
+                <colgroup>
+                  <col class="cper2800">
+                  <col class="cperauto">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>회원명</th>
+                    <th>결혼기념일</th>
+                  </tr>
+                  <tr">
+                    <td class="bdln">
+                      <input type="text" class="cper10000">
+                    </td>
+                    <td>
+                      <div class="ymd_box">
+                        <input type="text" class="year"><span>년</span>
+                        <input type="text" class="month"><span>월</span>
+                        <input type="text" class="day"><span>일</span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          <span class="sign_warn">
+            <img class="s_02" src="../image/sub/sign_warn_02.png">
+          </span>
+
+          <!-- 이용약관 -->
+          <div class="s_title mt45 bdbn">
+            <div class="fl">
+              <h2>이용약관</h2>
+            </div>
+            <div class="fr">
+              <input type="checkbox" id="c1">
+              <label for="c1">내용을 확인하였습니다.</label>
+            </div>
+          </div>
+          <div class="contract">
+            <p>회원가입 약관</p>
+            <br/>
+            <p>제1조(목적)
+                본 약관은 ㈜더화이트호텔리조트(이하 "회사"라고 한다)가 제공하는 홈페이지의 인터넷 회원 서비스
+                (이하 "서비스"라 한다)의 이용 및 회원가입에 관련된 사항과 절차 그리고 기타 필요한 사항을 규정함을 
+                목적으로 합니다.
+              </p>
+              <br/>
+              <p>제2조(약관의 효력과 변경)</p>
+          </div>
+
+          <!-- 개인정보 이용 동의 -->
+          <div class="s_title mt32 bdbn">
+            <div class="fl">
+              <h2>개인정보 이용 동의</h2>
+            </div>
+            <div class="fr">
+              <input type="checkbox" id="c1">
+              <label for="c1">개인정보 이용 동의</label>
+            </div>
+          </div>
+          <div class="contract">
+            <p>더화이트호텔 개인정보 수집 및 이용 동의서</p>
+            <br/>
+            <p>※ 더 화이트 호텔이 고객으로부터 취득한 다음의 정보는 통신비밀보호법, 전기통신 사업법, 정보통신
+                망 이용촉진 및 정보보호 등에 관한 법률, 개인정보 보호법 등에 의거하여 당사가 이를 수집하거나 
+                이용하기 위해서는 고객의 동의를 얻어야 하는 정보입니다. 
+              </p>
+              <br/>
+              <p>1. 개인정보의 수집 및 이용목적</p>
+              <p>당사가 개인정보를 수집 및 이용하는 목적은 다음과 같습니다.</p>
+          </div>
+
+          <div class="talign_c mt45">
+            <a href="#layer1" class="btn-example btn_m_sign"><img src="../image/sub/btn_m_sign.png"></a>
+          </div>
+
+          <!-- 가입완료팝업 -->
+          <div class="dim-layer" id="layer1">
+            <div class="dimBg"></div>
+            <div class="pop-layer popbox mt20p ml0">
+              <div class="pop-container">
+                <div class="pop-conts">
+                  <!--content //-->
+                  <a href="#" class="btn-layerClose"></a>
+                  <!--실속형-->
+                  <img src="../image/sub/membership_sign_01_popup.png">
+                  <!-- 패밀리 -->
+                  <!-- <img src="../image/sub/membership_sign_02_popup.png"> -->
+                  <a href="#!" class="btn_m_pay"><img src="../image/sub/btn_m_pay.png"></a>
+                  <!--// content-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 푸터 -->
+      <div class="footer">
+        <div class="f_btn_box">
+          <div>
+            <a href="#!" class="goway">개인정보처리방침</a>
+          </div>
+          <span class="bar"></span>
+          <div>
+            <a href="#!" class="phone_reserve">오시는길</a>
+          </div>
+        </div>
+        <div class="address">
+          <h4>더화이트호텔 | 서울 객실예약과 TEL 02-2139-7520</h4>
+          <h4>Email : rsvn@thewhitehotel.co.kr</h4>
+          <h4>평창 프론트데스크 TEL. 033-330-7777 Fax. 033-330-7709</h4>
+          <h4>Copyright(c)THE WHITE HOTEL all rights reserved</h4>
+          <h4>주소 : 강원도 평창군 봉평면 태기로 228-95</h4>
+          <h4>대표 : 김희준 | 사업자등록번호 : 667-88-00664</h4>
+        </div>
+        <div class="sns">
+          <a href="#!" class="fb"></a>
+          <a href="#!" class="insta"></a>
+          <a href="#!" class="yt"></a>
+        </div>
+      </div>
+
+
+
+    </div>
+</body>
+
+</html>
